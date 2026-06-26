@@ -184,16 +184,16 @@ After Bronze completes, a **Data Quality Report** is printed to stdout:
 ╔══════════════════════════════════════════════╗
 ║  DATA QUALITY REPORT                         ║
 ╠══════════════════════════════════════════════╣
-║  Total raw records       :             17    ║
-║  Clean records           :             10    ║
-║  Rejected records        :              7    ║
-║  Rejection rate          :          41.2%    ║
+║  Total raw records         :         17      ║
+║  Clean records             :         11      ║
+║  Rejected records          :          5      ║
+║  Rejection rate            :      29.4%      ║
 ╠══════════════════════════════════════════════╣
 ║  REJECTION BREAKDOWN                         ║
-║  event_ts cannot be pars :              3    ║
-║  user_id is null or empt :              2    ║
-║  event_type is null or e :              1    ║
-║  event_id is null or emp :              1    ║
+║  user_id is null or empty  :          2      ║
+║  event_ts is null or empt  :          1      ║
+║  event_ts cannot be parse  :          1      ║
+║  event_type is null or em  :          1      ║
 ╚══════════════════════════════════════════════╝
 ```
 

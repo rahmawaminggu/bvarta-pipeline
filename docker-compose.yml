@@ -1,0 +1,27 @@
+services:
+  pipeline:
+    build: .
+    container_name: bvarta-pipeline
+    volumes:
+      # Mount output directory so results are accessible on the host
+      - ./output:/app/output
+    command:
+      - python3.12
+      - job/pipeline.py
+      - --config
+      - config/pipeline.yaml
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  tests:
+    build: .
+    container_name: bvarta-tests
+    command:
+      - python3.12
+      - -m
+      - pytest
+      - tests/
+      - -v
+      - --tb=short
+    environment:
+      - PYTHONUNBUFFERED=1

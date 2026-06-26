@@ -1,0 +1,30 @@
+# Virtual environment
+.venv/
+
+# Pipeline output (generated at runtime)
+output/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Pytest cache
+.pytest_cache/
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+
+# macOS
+.DS_Store
+
+# Spark logs & warehouse
+spark-warehouse/
+derby.log
+metastore_db/
+
+# Coverage
+.coverage
+htmlcov/

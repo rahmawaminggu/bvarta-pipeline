@@ -1,0 +1,18 @@
+paths:
+  raw_events: data/raw/events
+  users: data/reference/users.csv
+  output: output
+
+bronze:
+  valid_event_types:
+    - CLICK
+    - VIEW
+    - PURCHASE
+    - SCROLL
+    - SHARE
+
+silver:
+  fill_missing_country: "UNKNOWN"
+
+gold:
+  partition_by: event_date
